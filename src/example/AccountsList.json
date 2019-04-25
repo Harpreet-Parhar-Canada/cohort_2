@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Checking",
+        "balance": "1000"
+    },
+    {
+        "name": "Savings",
+        "balance": "2000"
+    },
+    {
+        "name": "TFSA",
+        "balance": "3000"
+    },
+    {
+        "name": "Margin",
+        "balance": "4000"
+    },
+    {
+        "name": "Line of Credit",
+        "balance": "5000"
+    }
+]

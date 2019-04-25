@@ -1,0 +1,48 @@
+.citycard {
+	display: flex-wrap;
+	text-align: left;
+	padding-left: 2px;
+	background: black;
+	
+
+}
+.classDiv
+{
+	background:black;
+	border: 2px solid white;
+	height: 350px;
+	width: 250px;
+	align-items: center;
+	margin-top: 20px;
+
+}
+
+#info {
+	font: 15px arial;
+	color: white;
+}
+
+button {
+	border-radius: 5px; 
+	margin: 5px 2px 5px 2px;
+	font: 12px arial;
+}
+
+#enterstuff1, #enterstuff2 {
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+	width: 225px;
+}
+.statusbar {
+	border: 2px solid white;
+	display: flex-wrap;
+	padding-left: 2px;
+	padding-right: 2px;
+	font: 15px arial;
+	color: white;
+	text-align: left;
+
+}

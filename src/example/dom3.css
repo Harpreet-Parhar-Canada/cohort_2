@@ -1,0 +1,17 @@
+.Inputstyling {
+  border: 2px solid white;
+  border-radius: 5px;
+  background: black;
+  margin-top: 10px;
+  color:skyblue;
+  box-shadow: 5px 3px 3px 0px;
+
+}
+button{
+border-radius: 5px;
+background: white;
+width:30px;
+height:20px;
+margin-top: 10px;
+
+}

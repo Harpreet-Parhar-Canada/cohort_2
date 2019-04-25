@@ -1,0 +1,137 @@
+<link rel="stylesheet" type="text/css" href="dom.css">
+​
+<div class = clPanel>
+​
+​
+​
+     <div id = "cardDiv" class = "clPanelGray">
+      
+        
+        <button id = "addCard" >Add Card</button>
+          
+​
+             
+        </div>
+     
+</div>
+​
+​
+<script>
+card_counter = 1;
+​
+function ifButtonClicked(){
+ console.log("a button was clicked")
+ const targetGet = event.target.id;
+ console.log(event.target);
+ console.log(targetGet);
+​
+if (targetGet === "addCard"){
+  console.log("addCard was clicked");
+  mainPanel = event.target.parentNode;
+  newCard = onAddCard();
+  console.log ("memes", newCard);
+  mainPanel.insertBefore(newCard, null);
+  console.log("addCard was executed"); 
+}  else if (targetGet === "buttonBefore") {
+    clickedCard = event.target.parentNode ;
+		mainPanel = clickedCard.parentNode ;
+		newCard = onAddCard();
+		mainPanel.insertBefore(newCard,clickedCard) ;
+} else if (targetGet === "buttonAfter") {
+  clickedCard = event.target.parentNode ;
+		mainPanel = clickedCard.parentNode ;
+    newCard = onAddCard();
+    nextCard = clickedCard.nextSibling;
+		mainPanel.insertBefore(newCard,nextCard) ;
+} else if (targetGet === "buttonDelete"){
+  console.log("deleteButton was clicked")
+    clickedCard = event.target.parentNode ;
+		mainPanel = clickedCard.parentNode ;
+		mainPanel.removeChild(clickedCard);
+}
+​
+}
+​
+​
+function onAddCard(){
+  console.log("Add Card Triggered");
+  
+//creating elements
+  const newCard = document.createElement("div");
+      newCard.setAttribute("class", "clPanelGray");
+      console.log("Card", card_counter ,"div");
+​
+  const newCardHeader = document.createElement ("h1")
+    const newCardHeaderText = document.createTextNode("Card " + card_counter);
+      newCardHeader.appendChild(newCardHeaderText);
+        console.log("Card", card_counter ,"Header Created");
+​
+​
+  const newBreak = document.createElement("br");
+    console.log("Card", card_counter ,"break0 created");
+​
+​
+  const newButtonBefore = document.createElement ("button")
+    newButtonBefore.setAttribute("id", "buttonBefore");
+    const newButtonBeforeText = document.createTextNode("Add Card Before");
+      newButtonBefore.appendChild(newButtonBeforeText);
+        console.log("Card", card_counter ,"Before Button Created");
+​
+​
+  const newBreak1 = document.createElement("br");
+    console.log("Card", card_counter ,"Break 1 Created");
+​
+  const newButtonAfter = document.createElement ("button")
+    newButtonAfter.setAttribute("id", "buttonAfter");
+    const newButtonAfterText = document.createTextNode("Add Card After");
+      newButtonAfter.appendChild(newButtonAfterText);
+        console.log("Card", card_counter ,"After Button Created");
+​
+​
+  const newBreak2 = document.createElement("br");
+    console.log("Card", card_counter ,"Break 2 Created");
+​
+​
+  const newButtonDelete = document.createElement ("button")
+    newButtonDelete.setAttribute("id", "buttonDelete");
+    const newButtonDeleteText = document.createTextNode("Delete a Card");
+      newButtonDelete.appendChild(newButtonDeleteText);
+        console.log("Card", card_counter ,"Delete Button Created");
+//creating elements end
+​
+//appending
+​
+  newCard.appendChild(newCardHeader);
+    console.log("Card", card_counter ,"Header appended");
+  
+  newCard.appendChild(newBreak);
+    console.log("Card", card_counter ,"break 0 appended");
+  
+  newCard.appendChild(newButtonBefore);
+    console.log("Card", card_counter ,"Before Button appended");
+    
+  newCard.appendChild(newBreak1);
+    console.log("Card", card_counter ,"break 1 appended");
+  
+  newCard.appendChild(newButtonAfter);
+    console.log("Card", card_counter ,"After Button appended");
+​
+  newCard.appendChild(newBreak2);
+    console.log("Card", card_counter ,"break 2 appended");
+  
+  newCard.appendChild(newButtonDelete);
+    console.log("Card", card_counter ,"Delete Button appended");
+//appending end
+​
+//counter
+  card_counter++;
+//counter end
+​
+//returning
+  return(newCard);
+//returning end
+​
+  console.log ("Card Created") 
+}
+​
+document.addEventListener("click", ifButtonClicked);

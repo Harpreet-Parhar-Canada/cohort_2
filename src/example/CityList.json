@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Calgary",
+        "lat": 51.083333,
+        "long":-114.083333,
+        "population":1110000
+
+
+    },
+    {
+       "name": "Edmonton",
+        "lat": 53.55,
+        "long":-113.5,
+        "population":1058000
+
+    },
+    {
+        "name": "Hamilton",
+        "lat": 43.256101,
+        "long":-79.857484,
+        "population":721053
+
+    },
+    {
+       "name": "Winnipeg",
+        "lat": 49.883333,
+        "long":-97.166667,
+        "population":632063
+
+    }
+   
+]

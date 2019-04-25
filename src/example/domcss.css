@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(rgb(43, 59, 59), rgba(56, 35, 33, 0.651));
+    font-family: helvetica;
+  }
+
+  .clPanel {
+	background: white;
+	border: solid;
+	width: 30%;
+	min-height: 200px;
+	margin: auto;
+	text-align: left;
+	padding: 30px;
+	border-radius: 10px;
+	padding: 10px;
+	/*margin: 20px;*/
+	box-shadow: 10px 10px 15px;
+}
+
+.clPanelGray {
+	background: rgb(138, 136, 136);
+	border: solid;
+	width: 50%;
+	min-height: 200px;
+	margin: auto;
+	text-align: left;
+	padding: 30px;
+	border-radius: 10px;
+	padding: 10px;
+	/*margin: 20px;*/
+	box-shadow: 10px 10px 15px;
+}

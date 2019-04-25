@@ -1,0 +1,45 @@
+
+.div1
+{border-radius: 15px 102px 15px 15px;
+-moz-border-radius: 15px 102px 15px 15px;
+-webkit-border-radius: 15px 102px 15px 15px;
+border: 2px solid #523c52;
+height: 300px;
+width:50%;
+align-items:center;
+margin: auto;
+padding: 60px
+}
+.box
+{
+	width:90px;
+	height:90px ;
+	border: 1px solid black;
+	display:inline-block;
+	line-height: 90px;
+	text-align: center;
+}
+.board
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 320px;
+}
+.div2
+{border-radius: 15px 102px 15px 15px;
+-moz-border-radius: 15px 102px 15px 15px;
+-webkit-border-radius: 15px 102px 15px 15px;
+border: 2px solid #523c52;
+height: 250px;
+width:50%;
+align-items:center;
+margin: auto;
+padding: 60px
+}
+
+.imagelogo{
+	border-image: 5%;
+	width: 15%;
+	height: 70px;
+
+}
