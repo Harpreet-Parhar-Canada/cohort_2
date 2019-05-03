@@ -1,9 +1,9 @@
-import Node from './Node';
+import NodeLinked from './NodeLinked';
 
 class LinkedList {
 	constructor() {
-		this.head = new Node('', 0);
-		this.tail = new Node('', 0);
+		this.head = new NodeLinked('', 0);
+		this.tail = new NodeLinked('', 0);
 		this.current = this.head;
 
 		this.head.previous = null;
@@ -14,7 +14,7 @@ class LinkedList {
 	}
 
 	insertAfter (subject, amount, next, previous) {
-	    let newNode = new Node(subject, amount, next, previous);	//create new Node
+	    let newNode = new NodeLinked(subject, amount, next, previous);	//create new Node
 
 	    newNode.next = this.current.next;							//connect new Node to current.next
 	    this.current.next.previous = newNode;
@@ -22,7 +22,8 @@ class LinkedList {
 	    newNode.previous = this.current;							//connect newNode to current node
 	    this.current.next = newNode;
 
-	    this.current = newNode;										//set current to new Node
+	    this.current = newNode;		
+	   								//set current to new Node
 	}
 
 	firstPosition() {
@@ -63,15 +64,15 @@ class LinkedList {
 	}
 
 	listTotal() {
-		this.current = this.head;
-		this.amountTotal = 0;
-		while(this.current !== null) {
-			this.amountTotal = this.amountTotal + this.current.amount;
-			this.current = this.current.next;
+		let start = this.head;
+		let amountTotal = 0;
+		while(start !== null) {
+			amountTotal = amountTotal + start.amount;
+			start = start.next;
 		}
 
-		return this.amountTotal;
+		return amountTotal;
 	}
 }
 
-export default LinkedList
+export default LinkedList;

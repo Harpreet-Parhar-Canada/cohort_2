@@ -33,7 +33,7 @@ class Community {
                 return a
             }
             return b
-        });
+        },0);
         return maxNorth.name;
     }
 
@@ -43,7 +43,7 @@ class Community {
                 return a
             }
             return b
-        });
+        },0);
         return maxSouth.name;
     }
 

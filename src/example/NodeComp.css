@@ -1,0 +1,29 @@
+.classDiv4
+{
+	background:black;
+	border: 2px solid white;
+	height: 200px;
+	width: 250px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+.classDiv5
+{
+	background:black;
+	border: 2px solid white;
+	height: 70px;
+	width: 250px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.insertinfo {
+	border-radius: 2px;
+	margin-left: 10px;
+	margin-top: 10px;
+
+}

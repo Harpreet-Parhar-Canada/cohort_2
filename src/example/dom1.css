@@ -3,12 +3,14 @@
 {border-radius: 15px 102px 15px 15px;
 -moz-border-radius: 15px 102px 15px 15px;
 -webkit-border-radius: 15px 102px 15px 15px;
-border: 2px solid #523c52;
+border: 2px solid white;
 height: 300px;
-width:50%;
+width:60%;
 align-items:center;
 margin: auto;
-padding: 60px
+padding: 60px;
+text-align: center;
+margin-bottom: 10px;
 }
 .box
 {
@@ -18,6 +20,7 @@ padding: 60px
 	display:inline-block;
 	line-height: 90px;
 	text-align: center;
+	background: white;
 }
 .board
 {
@@ -34,7 +37,8 @@ height: 250px;
 width:50%;
 align-items:center;
 margin: auto;
-padding: 60px
+padding: 60px;
+
 }
 
 .imagelogo{
@@ -42,4 +46,7 @@ padding: 60px
 	width: 15%;
 	height: 70px;
 
+}
+.div3 {
+	color:white;
 }

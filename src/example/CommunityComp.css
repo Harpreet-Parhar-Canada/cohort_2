@@ -6,11 +6,11 @@
 	
 
 }
-.classDiv
+.classDiv1
 {
 	background:black;
 	border: 2px solid white;
-	height: 350px;
+	height: 400px;
 	width: 250px;
 	align-items: center;
 	margin-top: 20px;
@@ -45,4 +45,10 @@ button {
 	color: white;
 	text-align: left;
 
+}
+.cityinfo {
+    border: 2px solid white;
+    display: flex-wrap;
+    padding-left: 2px;
+    padding-right: 2px;
 }

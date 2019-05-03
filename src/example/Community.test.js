@@ -39,6 +39,9 @@ test('Test the Account functions', () => {
     console.log(" Test 9");
     expect(obj.showInfo(2)).toBe( `2 Hamilton 43.256101 -79.857484 721043`);
     
+    console.log("Test 10")
+    obj.deleteCity(2)
+    expect(obj.cityList.length).toBe(4);
     
  
    

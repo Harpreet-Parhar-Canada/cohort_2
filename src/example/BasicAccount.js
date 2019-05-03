@@ -1,5 +1,5 @@
 import React from 'react';
-import './dom2.css';
+// import './dom2.css';
 import './dom4.css';
 import Account1 from "./Account1.js"
 import Accounts from "./Accounts.js"
@@ -36,7 +36,7 @@ class BasicAccount extends React.Component {
      	let newBalance=this.savingAccount.deposit(newTakeBalance);
      	console.log(this.savingAccount.balance);
      	this.setState({
-     		accountBalance:this.savingAccount.toBalance()
+     		accountBalance:this.savingAccount.getBalance()
      	})
      }
 
@@ -45,7 +45,7 @@ class BasicAccount extends React.Component {
      	let newBalance=this.savingAccount.withDraw(newTakeWithDraw);
      	console.log(this.savingAccount.balance);
      	this.setState({
-     		accountBalance:this.savingAccount.toBalance()
+     		accountBalance:this.savingAccount.getBalance()
      	 })
      }
      changeName = () => {

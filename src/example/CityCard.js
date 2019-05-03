@@ -1,5 +1,7 @@
 import React from 'react';
 import Community from './Community';
+import './CommunityComp.css';
+
 
 class CityCard extends React.Component {
 	constructor(props) {
@@ -38,7 +40,7 @@ class CityCard extends React.Component {
 
 	render(props) {
 		return(
-			<div className='classDiv'>
+			<div className='classDiv1'>
 			<div className='citycard'>
 				<p id='info'>Name: {this.props.city.name}</p>
 				<p id='info'>Type: {this.props.city.howBig()}  </p>

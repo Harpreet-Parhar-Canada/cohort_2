@@ -7,7 +7,7 @@ class Picture extends React.Component {
 
 	render(){
 		
-		return (<div className="divClass1">
+		return (<div className="divClass3">
 			 <img src={Rose} id="image1" alt="first" />
 			</div>);
     
